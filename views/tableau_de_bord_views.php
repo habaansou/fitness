@@ -28,11 +28,11 @@
         <!-- breadcrumb -->
         <div class="breadcrumb-header justify-content-between">
             <div class="left-content">
-                <h4 class="content-title mb-2">Hi, welcome back!</h4>
+                <h4 class="content-title mb-2">Bienvenue, M.<?=ucfirst($_SESSION['fitness']['loginUsers']);?></h4>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Analytics &amp; Monitoring</li>
+                        <li class="breadcrumb-item"><a href="#">Tableau de bord</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Analyses &amp; Statistiques</li>
                     </ol>
                 </nav>
             </div>

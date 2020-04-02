@@ -24,8 +24,112 @@
 
     <!-- container -->
     <div class="container-fluid">
-
-
+        <!-- breadcrumb -->
+        <div class="breadcrumb-header justify-content-between">
+            <div class="my-auto">
+                <div class="d-flex">
+                    <h4 class="content-title mb-0 my-auto">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Liste des fournisseurs</font>
+                        </font>
+                    </h4><span class="text-muted mt-1 tx-13 ml-2 mb-0">
+                </div>
+            </div>
+            <div class="d-flex my-auto breadcrumb-right">
+                <button class="btn btn-outline-primary mr-3">
+                    <span class="icon-label"><i class="typcn typcn-edit"></i></span> <span class="btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Email</font></font></span></button> <button class="btn btn-outline-danger mr-3"><span class="icon-label"><i class="typcn typcn-printer"></i></span> <span class="btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Impression</font></font></span></button> <button class="btn btn-success mr-3"><span class="icon-label"><i class="typcn typcn-download"></i></span> <span class="btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Exportation</font></font></span></button>
+            </div>
+        </div>
+        <!-- breadcrumb -->
+        <!-- row opened -->
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <?php if(isset($warnings) AND !empty($warnings)):?>
+                    <?php foreach($warnings as $get):?>
+                        <div class="alert alert-warning alert-dismissible fade show message" role="alert" id="message">
+                            <strong>Information :</strong> <?=$get?>.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php endforeach;?>
+                <?php endif;?>
+                <?php if(isset($success) AND !empty($success)):?>
+                    <?php foreach($success as $get):?>
+                        <div class="alert alert-success alert-dismissible fade show message" role="alert" id="message">
+                            <strong>Information :</strong> <?=$get?>.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php endforeach;?>
+                <?php endif;?>
+                <?php if(isset($errors) AND !empty($errors)):?>
+                    <?php foreach($errors as $get):?>
+                        <div class="alert alert-danger alert-dismissible fade show message" role="alert" id="message">
+                            <strong>Information :</strong> <?=$get?>.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    <?php endforeach;?>
+                <?php endif;?>
+            </div>
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="card-title mg-b-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LISTE DES FOURNISSEURS</font></font></h4>
+                            <i class="mdi mdi-dots-horizontal text-gray"></i>
+                        </div>
+                        <p class="tx-12 tx-gray-500 mb-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ceci est la liste détailles des fournisseurs avec les options modifier et supprimer. </font></font><a href="#"><font style="vertical-align: inherit;"></font></a></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table text-md-nowrap" id="example1">
+                                <thead>
+                                <tr>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Matricules</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Intitules</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Types</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Téléphones</font></font></th>
+                                    <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adresses</font></font></th>
+                                    <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Emails</font></font></th>
+                                    <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dates Enregistrements</font></font></th>
+                                    <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actions</font></font></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php if(isset($getFournisseurs) AND !empty($getFournisseurs)):?>
+                                    <?php foreach($getFournisseurs as $get):?>
+                                        <tr>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?='FITNESS-'.$get->matriculeFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->intituleFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->typeFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->telephoneFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->adresseFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->emailFournisseurs?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->dateEnregistrement?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateDembausePersonnels),'d/m/Y')?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                                        <div class="btn-icon-list wd-xl-80p">
+                                                            <a href="<?=DIR.'liste_des_fournisseurs/'.$get->idFournisseurs?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
+                                                            <a href="<?=DIR.'liste_des_fournisseurs/'.$get->idFournisseurs?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
+                                                        </div>
+                                                    </font>
+                                                </font>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach;?>
+                                <?php endif;?>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/div-->
+        </div>
+        <!-- /row -->
     </div>
     <!-- Container closed -->
 </div>

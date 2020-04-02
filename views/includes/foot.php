@@ -11,7 +11,6 @@
 <script src="<?=DIR?>assets/plugins/moment/moment.js"></script>
 
 <!-- P-scroll js -->
-<script src="<?=DIR?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="<?=DIR?>assets/plugins/perfect-scrollbar/p-scroll.js"></script>
 
 <!-- Internal Data tables -->
@@ -51,10 +50,46 @@
 
 <!-- Sticky js -->
 <script src="<?=DIR?>assets/js/sticky.js"></script>
-
-<!-- eva-icons js -->
-<script src="<?=DIR?>assets/js/eva-icons.min.js"></script>
+<script src="<?=DIR?>assets/js/modal-popup.js"></script>
 
 <!-- custom js -->
 <script src="<?=DIR?>assets/js/custom.js"></script>
 <script src="<?=DIR?>assets/js/myscripts.js?id=<?=uniqid()?>"></script>
+
+<!--Internal  Chart.bundle js -->
+<script src="<?=DIR?>assets/plugins/chart.js/Chart.bundle.min.js"></script>
+
+<!--Internal Sparkline js -->
+<script src="<?=DIR?>assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Moment js -->
+<script src="<?=DIR?>assets/plugins/raphael/raphael.min.js"></script>
+
+<!--Internal  Flot js-->
+<script src="<?=DIR?>assets/plugins/jquery.flot/jquery.flot.js"></script>
+<script src="<?=DIR?>assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+<script src="<?=DIR?>assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
+<script src="<?=DIR?>assets/plugins/jquery.flot/jquery.flot.categories.js"></script>
+<script src="<?=DIR?>assets/js/dashboard.sampledata.js"></script>
+<script src="<?=DIR?>assets/js/chart.flot.sampledata.js"></script>
+
+<!--Internal Apexchart js-->
+<script src="<?=DIR?>assets/js/apexcharts.js"></script>
+
+<!-- Rating js-->
+<script src="<?=DIR?>assets/plugins/rating/jquery.rating-stars.js"></script>
+<script src="<?=DIR?>assets/plugins/rating/jquery.barrating.js"></script>
+
+<!--Internal  Perfect-scrollbar js -->
+<script src="<?=DIR?>assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+<!-- Eva-icons js -->
+<script src="<?=DIR?>assets/js/eva-icons.min.js"></script>
+<!-- Internal Map -->
+<script src="<?=DIR?>assets/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="<?=DIR?>assets/plugins/jqvmap/maps/jquery.vmap.world.js"></script>
+<script src="<?=DIR?>assets/js/index-map.js"></script>
+
+<!--Internal  index js -->
+<script src="<?=DIR?>assets/js/index.js"></script>
+<script src="<?=DIR?>assets/js/jquery.vmap.sampledata.js"></script>
