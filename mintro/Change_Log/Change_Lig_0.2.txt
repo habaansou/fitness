@@ -1,0 +1,115 @@
+mintro-update 
+
+Date 30th March 2020
+
+1) update datatable folder and delete unused folders
+2) Date table js and css file names are case sensitive issue fixed
+
+
+/////////////////////////////////////////////////////
+1) update datatable folder and delete unused folders
+/////////////////////////////////////////////////////
+
+
+step1: Replace previous "datatable" folder with updated "datatable" folder in plugins folder ---> (assets/plugins)
+
+
+
+
+step2: Delete below mentioned folders
+
+1) datatables.net
+2) datatables.net-dt
+3) datatables.net-responsive
+4) datatables.net-responsive-dt
+
+
+
+//////////////////////////////////////////////////////////////////
+2) Date table js and css file names are case sensitive issue fixed
+/////////////////////////////////////////////////////////////////
+
+Step1: there is a case sensitive issue in "table-data.html" page 
+	
+       In plugins the folder name is "datatable"(i.e -- d) bt in "table-data.html" the links are saved as Datatable (i.e -- D)
+       in console it showing 404 error to avoid thye isssue please follow below steps
+
+       and all js and css are files i.e(datatables.net,datatables.net-dt, datatables.net-responsive,datatables.net-responsive-dt) are moved in datatable
+	folder so datatable links are updated please update the links as shown below
+       
+       
+Step2: open "table-data.html" in both (left-menu and horizontal menu html table-data.html files)
+
+
+
+Step3: go to css links in below --[ Previous links ] the 2nd link "Datatable" is saved as D so remove D and update it with small d as shown in updated one
+
+Previous:
+
+<!-- Data table css -->
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+
+			
+
+
+Updated
+
+<!-- Data table css -->
+<link href="../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+<link href="../assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+ 
+
+in the same way please update js links in "table-data.html" page 
+
+
+Step4: Go to js link in "table-data.html" page 
+
+
+Previous:
+
+
+<!-- Internal Data tables -->
+<script src="../assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+<script src="../assets/plugins/Datatable/js/jquery.dataTables.js"></script>
+<script src="../assets/plugins/Datatable/js/dataTables.bootstrap4.js"></script>
+<script src="../assets/plugins/Datatable/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/Datatable/js/buttons.bootstrap4.min.js"></script>
+<script src="../assets/plugins/Datatable/js/jszip.min.js"></script>
+<script src="../assets/plugins/Datatable/js/pdfmake.min.js"></script>
+<script src="../assets/plugins/Datatable/js/vfs_fonts.js"></script>
+<script src="../assets/plugins/Datatable/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/Datatable/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/Datatable/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatable/responsive.bootstrap4.min.js"></script>
+
+
+Updated
+
+<!-- Internal Data tables -->
+<script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+<script src="../assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+<script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+<script src="../assets/plugins/datatable/js/jquery.dataTables.js"></script>
+<script src="../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+<script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+<script src="../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+<script src="../assets/plugins/datatable/js/jszip.min.js"></script>
+<script src="../assets/plugins/datatable/js/pdfmake.min.js"></script>
+<script src="../assets/plugins/datatable/js/vfs_fonts.js"></script>
+<script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
+<script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
+<script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+<script src="../assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+<script src="../assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
