@@ -6,6 +6,7 @@ ob_start();
     .header p{
         margin:0;
         color: #043bff;
+        padding: 5px;
     }
     .footer p{
         margin:0;
@@ -57,12 +58,16 @@ ob_start();
         margin-bottom: -50px;
     }
     .feuille {
-        background-color: #a748ca;
+        background-color: #ca9211;
         width: 100%;
         padding: -35px;
     }
     p {
         padding-bottom: -5px;
+    }
+    .signature{
+        text-align: center;
+        padding: 110px 290px 90px;
     }
 
 </style>
@@ -72,45 +77,46 @@ ob_start();
             <?php
             require_once ("../../_config/config.php");
             require_once ("../../_config/db.php");
-            require_once ("../../_classes/Onlines.php");
+            require_once ("../../_classes/Historiques.php");
             $n = time().'_'.uniqid();
            ?>
            <div id="image">
-                <img src="http://localhost/cfemguinee/assets/images/logo.png" alt="">
+                <img src="../../assets/img/brand/favicon.png" alt="">
            </div>
            <div class="fiche">
-               <h1>FICHE DE PRÉ INSCRIPTION</h1>
+               <h1>PRÉ-INSCRIPTION</h1>
            </div>
            <div class="feuille">
-               <h1 style="text-align: center; color: white;">Feuille du participant</h1>
+               <h1 style="text-align: center; color: white;">Fiche d'inscription</h1>
            </div>
        </div>
     </page_header>
     <page_footer>
         <div class="footer">
-            <p style="text-align: center">Formation - Assistance - Conseil - Installation - Récrutement - Interim <br> Tel : (+224) 629 84 60 60 / 654 54 04 20 </p>
+            <p style="text-align: center">Formations - Assistances - Conseils - Sports - Récrutements - Interims <br> Tel : (+224) 622 347 827 / 657 347 827 </p>
         </div>
     </page_footer>
     <div style="width: 90%; margin-left: 20px;" class="content">
         <p></p>
-        <?php if(isset($_GET['id']) AND !empty($_GET['id']) AND $_GET['id']>0):?>
-        <?php $getAllInscription = Onlines::getInscriptionById($_GET['id']);
-                foreach ($getAllInscription as $get):?>
-            <p>Prénom : <?=ucfirst($get->prenomOnlines)?></p>
-            <p>Nom : <?=strtoupper($get->nomOnlines)?></p>
-            <P>Niveau d’étude : <?=ucfirst($get->niveauOnlines)?></P>
-            <p>Statut actuel : <?=ucfirst($get->statutOnlines)?></p>
-            <p>Saisir le nom de cette entreprise : <?=ucfirst($get->entrepriseOnlines)?></p>
-            <p>Pays d’origine : <?=ucfirst($get->paysOnlines)?></p>
-            <p>N° de téléphone : <?=ucfirst($get->telOnlines)?></p>
-            <p>Adresse mail : <?=ucfirst($get->emailOnlines)?></p>
-            <p>Adresse (Quartier) : <?=ucfirst($get->adresseOnlines)?></p>
-            <p>Quelle Formation voulez-vous suivre ? : <?=ucfirst($get->formationOnlines)?></p>
-            <p>Mode de Financement : <?=ucfirst($get->paysOnlines)?></p>
-            <p>Quelle est l’entreprise qui finance ? : <?=ucfirst($get->payerOnlines)?></p>
-            <p>Comment comptez-vous nous payer ? : <?=ucfirst($get->modepaiementOnlines)?></p>
-        <?php endforeach; ?>
+        <?php ?>
+        <?php
+        if(isset($_GET['id']) AND !empty($_GET['id']) AND $_GET['id']>0):
+            extract($_GET);
+            $getRecuInscription = \_classes\Historiques::getHistoriqueById($id);
+            foreach ($getRecuInscription as $get):?>
+                <p>Matricule : <?=ucfirst($get->matriculeClients)?></p>
+                <p>Prénom : <?=ucfirst($get->prenomClients)?></p>
+                <p>Nom : <?=strtoupper($get->nomClients)?></p>
+                <p>N° de téléphone : <?=ucfirst($get->telephoneClients)?></p>
+                <p>Adresse E-mail : <?=ucfirst($get->emailClients)?></p>
+                <p>Quelle Sport vous ête inscrit ? : <?=ucfirst($get->sportClients)?></p>
+                <p>Montant payé  : <?=number_format($get->fraisClients,'2','.',',').' GNF'?></p>
+            <?php endforeach; ?>
         <?php endif; ?>
+    </div>
+    <div class="signature">
+        <p class="p-1">Signature et Cachet</p>
+        <p class="p-1">David Ansoumane HABA</p>
     </div>
 </page>
 <?php
@@ -120,7 +126,7 @@ try{
     $pdf = new HTML2PDF('P','A5','fr');
     $pdf->pdf->SetDisplayMode('fullpage');
     $pdf->pdf->SetTitle('FORMULAIRE_INSCRIPTION');
-    $pdf->pdf->SetAuthor('CFEM-GUINEE');
+    $pdf->pdf->SetAuthor('FITNESSONE');
     $pdf->pdf->SetProtection(array('print'));
     $pdf->writeHTML($content);
      ob_end_clean();

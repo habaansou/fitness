@@ -2,288 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3864c630-41d8-4c1c-89a2-c937983ab3ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e870c39a978bfavicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e870c752d14efavicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/error_log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/formulaire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_LGPL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/exception.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/locale.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/myPdf.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/parsingCss.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/parsingHtml.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_class/tcpdfConfig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_lisez_moi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_read_me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/2dbarcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/CHANGELOG.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/README.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/barcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/cache/chapter_demo_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/cache/chapter_demo_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/cache/table_data_demo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/cache/utf8test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/lang/bra.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/lang/eng.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/lang/ger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/lang/ita.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/tcpdf_config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/config/tcpdf_config_alt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/doc/read_me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/examples/read_me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/README.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/ZarBold.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/ZarBold.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/almohanad.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/almohanad.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/almohanad.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/arialunicid0.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/courier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/BUGS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/NEWS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/langcover.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/status.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavu-fonts-ttf-2.30/unicover.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusans.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusans.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusans.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensed.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensed.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusanscondensedi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmono.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmono.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmono.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonob.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonob.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonobi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonobi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonobi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonoi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonoi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavusansmonoi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserif.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserif.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserif.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensed.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensed.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifcondensedi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/dejavuserifi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/CREDITS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/INSTALL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freefont-20090104/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemono.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemono.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemono.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonob.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonob.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonobi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonobi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonobi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonoi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonoi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freemonoi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesans.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesans.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesans.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freesansi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserif.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserif.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserif.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifb.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifb.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifbi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifbi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifi.ctg.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/freeserifi.z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/helvetica.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/helveticab.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/helveticabi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/helveticai.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/hysmyeongjostdmedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/kozgopromedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/kozminproregular.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/msungstdlight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/stsongstdlight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/symbol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/times.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/timesb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/timesbi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/timesi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/uni2cid_ac15.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/uni2cid_ag15.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/uni2cid_aj16.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/uni2cid_ak12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/README.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1250.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1251.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1252.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1253.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1254.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1255.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1257.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp1258.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/cp874.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-1.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-11.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-15.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-16.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-2.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-4.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-5.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-7.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/iso-8859-9.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/koi8-r.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/enc/koi8-u.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/freetype6.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/makeallttffonts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/makefont.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/pfm2afm.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/src/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/ttf2ufm.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/utils/zlib1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/zapfdingbats.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/fonts/zarbold.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/htmlcolors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/images/read_me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/qrcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/tcpdf.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/tcpdf.fdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/tcpdf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/_tcpdf_5.0.002/unicode_data.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/bookmark.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple00.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple01.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple02.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple03.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple04.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple05.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple06.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple07.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple08.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple09.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple10.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple11.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/exemple13.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/forms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/groups.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/js1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/js2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/js3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/qrcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/radius.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/regle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/bas_page.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple00.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple01.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple02.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple03.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple04.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple05.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple06.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple06.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple07a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple07b.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple08.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple09.png.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple10.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple10a.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple10b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple10c.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple11.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/exemple13.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/forms.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/logo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/puce.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/puce2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/regle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/res/tcpdf_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/svg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/svg_tiger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/svg_tree.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/ticket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/examples/utf8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/html2pdf.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/ca.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/cs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/da.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/de.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/en.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/es.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/fr.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/it.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/nl.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/pt.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/pdf/html2pdf/locale/tr.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classes/Depenses.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Depenses.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_classes/Historiques.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Historiques.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classes/Paiements.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Paiements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/imprimer_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/imprimer_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/pdf/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/pdf/formulaire.php" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pdf/recu_inscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historiques_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tableau_de_bord_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/tableau_de_bord_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/imprimer_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/imprimer_views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +86,7 @@
       <updated>1585776861418</updated>
       <workItem from="1585776866923" duration="13326000" />
       <workItem from="1585817551857" duration="1435000" />
-      <workItem from="1585848774978" duration="31320000" />
+      <workItem from="1585848774978" duration="35214000" />
     </task>
     <servers />
   </component>
@@ -409,5 +134,9 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="456" y="198" key="run.anything.popup/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585864293922" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1585919745318">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1585919745318" />
   </component>
 </project>

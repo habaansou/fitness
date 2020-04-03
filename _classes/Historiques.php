@@ -62,4 +62,15 @@ class Historiques
         $req->closeCursor();
         return $resultats;
     }
+    public static function getHistoriqueById(string $id):array {
+        global $db;
+        $req=$db->prepare("SELECT * FROM historiques INNER JOIN clients ON historiques.matriculeClients=clients.matriculeClients WHERE idInscriptions = ?;");
+        $req->execute([(int)($id)]);
+        $resultats = [];
+        while ($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
+    }
 }
