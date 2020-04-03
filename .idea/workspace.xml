@@ -2,12 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3864c630-41d8-4c1c-89a2-c937983ab3ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fitness.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_classes/Depenses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_classes/Produits.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_classes/Ventes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8639246767bajax.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e86392467c4a1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e863924683b589496975_2648815175352406_900870412538216448_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641872bcec1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641872c6001200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641872d35e1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641efd4b9c1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641efd54a21200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e8641efd5c8d1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e86425dc28591200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e86425dc2e151200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/products/5e86425dc33601200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e86642a3207cfavicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users5e862dcd0e2111200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/liste_des_depenses_controllers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/nouvelle_depense_controllers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/nouvelle_vente_controllers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/liste_des_depenses_models.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/nouvelle_depense_models.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/nouvelle_vente_models.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/liste_des_depenses_views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/nouvelle_depense_views.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/nouvelle_vente_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/liste_des_fournisseurs_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/liste_des_fournisseurs_controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/foot.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/foot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_classes/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_classes/Historiques.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Historiques.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/_config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/getPersonnelById.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/getPersonnelById.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/myscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/myscripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/categories_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/categories_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/liste_des_produits_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/liste_des_produits_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/nouveau_employe_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nouveau_employe_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/nouveau_produit_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/nouveau_produit_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/categories_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/categories_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historiques_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_clients_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_clients_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_employes_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_employes_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/nouveau_fournisseur_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/nouveau_fournisseur_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_paiments_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_paiments_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_produits_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_produits_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/nouveau_produit_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/nouveau_produit_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/tableau_de_bord_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/tableau_de_bord_views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +126,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585776861418</updated>
       <workItem from="1585776866923" duration="13326000" />
-      <workItem from="1585817551857" duration="1228000" />
+      <workItem from="1585817551857" duration="1435000" />
+      <workItem from="1585848774978" duration="22881000" />
     </task>
     <servers />
   </component>
@@ -100,6 +142,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="392" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870@0.0.1600.870" timestamp="1585783562999" />
+    <state x="480" y="166" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585850445440">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="480" y="166" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585850445440" />
     <state x="530" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585780477398">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -108,9 +154,14 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="580" y="190" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1585782453911" />
-    <state x="635" y="366" key="NewPhpFileDialog" timestamp="1585788615548">
+    <state x="622" y="269" key="NewPhpClassDialog" timestamp="1585862367995">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
+    <state x="622" y="269" key="NewPhpClassDialog/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585862367995" />
+    <state x="635" y="366" key="NewPhpFileDialog" timestamp="1585858820160">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="635" y="366" key="NewPhpFileDialog/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585858820160" />
     <state x="635" y="366" key="NewPhpFileDialog/0.0.1600.870@0.0.1600.870" timestamp="1585788615548" />
     <state x="301" y="77" key="SettingsEditor" timestamp="1585782400691">
       <screen x="0" y="0" width="1600" height="870" />
@@ -120,5 +171,9 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="495" y="259" key="com.intellij.ide.util.TipDialog/0.0.1600.870@0.0.1600.870" timestamp="1585781743619" />
+    <state x="456" y="198" key="run.anything.popup" timestamp="1585864293922">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="456" y="198" key="run.anything.popup/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585864293922" />
   </component>
 </project>

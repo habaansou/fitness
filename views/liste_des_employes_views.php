@@ -96,7 +96,9 @@
                                         <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Salaires</font></font></th>
                                         <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Adresse</font></font></th>
                                         <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Date Embauche</font></font></th>
+                                        <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                         <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actions</font></font></th>
+                                        <?php endif;?>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -111,6 +113,7 @@
                                                 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=number_format($get->salairePersonnels,'2',',','.').' GNF'?></font></font></td>
                                                 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->adressePersonnels?></font></font></td>
                                                 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateDembausePersonnels),'d/m/Y')?></font></font></td>
+                                                <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                                 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                             <div class="btn-icon-list wd-xl-80p">
                                                                 <a href="<?=DIR.'modification_employe/'.$get->idPersonnels?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
@@ -119,6 +122,7 @@
                                                         </font>
                                                     </font>
                                                 </td>
+                                                <?php endif;?>
                                             </tr>
                                         <?php endforeach;?>
                                     <?php endif;?>

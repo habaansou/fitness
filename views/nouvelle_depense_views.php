@@ -29,7 +29,7 @@
         <div class="breadcrumb-header justify-content-between">
             <div class="my-auto">
                 <div class="d-flex">
-                    <h4 class="content-title mb-0 my-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gestion des produits</font></font></h4>
+                    <h4 class="content-title mb-0 my-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nouvelle Dépense</font></font></h4>
                 </div>
             </div>
             <div class="d-flex my-auto breadcrumb-right">
@@ -74,10 +74,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div>
-                            <h6 class="card-title mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nouveau Produit</font></font></h6>
+                            <h6 class="card-title mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nouvelle Dépense</font></font></h6>
                             <p class="text-muted card-sub-title">
                                 <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">Veuillez saisir correctement les données du produit.
+                                    <font style="vertical-align: inherit;">Veuillez saisir correctement les données de la dépense.
                                     </font>
                                 </font>
                             </p>
@@ -97,35 +97,21 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-group">
-                                                    <label for="prenom">Nom Produit</label>
+                                                    <label for="prenom">Libélle</label>
                                                     <?php global $intitule?>
                                                     <input type="text" class="form-control" value="<?=$intitule?>" name="intitule" id="intitule" placeholder="Veuillez saisir l'intitule" required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label>Etat</label>
-                                                <select class="form-control select2" name="etat" style="width: 100%;" required="">
-                                                    <option value="">Veuillez séléctionner le type</option>
-                                                    <option value="Occassion">Occassion</option>
-                                                    <option value="Neuf">Neuf</option>
-                                                </select>
+                                                <label>Date</label>
+                                                <?php global $date?>
+                                                <input type="date" class="form-control" value="<?=$date?>" name="date" id="date" placeholder="Veuillez séléctionner la date" required="">
                                             </div>
                                             <div class="form-group">
                                                 <div class="form-group">
-                                                    <label for="photo">Photo l</label>
-                                                    <input type="file" class="form-control" name="photo1" id="photo" placeholder="Veuillez séléctionner sa photo" required="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="form-group">
-                                                    <label for="photo">Photo II</label>
-                                                    <input type="file" class="form-control" name="photo2" id="photo" placeholder="Veuillez séléctionner sa photo" required="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="form-group">
-                                                    <label for="photo">Photo III</label>
-                                                    <input type="file" class="form-control" name="photo3" id="photo" placeholder="Veuillez séléctionner sa photo" required="">
+                                                    <label for="montant">Montant</label>
+                                                    <?php global $montant?>
+                                                    <input type="number" class="form-control" value="<?=$montant?>" name="montant" id="montant" placeholder="Veuillez saisir le montant" required="">
                                                 </div>
                                             </div>
                                             <div class="row row-xs wd-xl-80p">
@@ -142,33 +128,15 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <div class="form-group">
-                                                    <label>Catégorie</label>
-                                                    <select class="form-control select2" name="idcategorie" style="width: 100%;" required="">
-                                                        <option value="">Veuillez séléctionner la catégorie</option>
-                                                        <?php if(isset($getCategories) AND !empty($getCategories)):?>
-                                                            <?php foreach ($getCategories as $get):?>
-                                                                <option value="<?=$get->idCategories?>"><?=$get->nameCategories?></option>
-                                                            <?php endforeach;?>
-                                                        <?php endif;?>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Date d'arrivée</label>
-                                                    <?php global $datearrive?>
-                                                    <input type="date" value="<?=$datearrive?>" class="form-control" name="datearrive" id="exampleInputEmail1" required="">
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="form-group">
-                                                        <label for="prix">Prix</label>
-                                                        <?php global $prix?>
-                                                        <input type="number" class="form-control" value="<?=$prix?>" name="prix" id="prix" placeholder="Veuillez saisir le prix" required="">
-                                                    </div>
+                                                    <label>Depenser par </label>
+                                                    <?php global $part?>
+                                                    <input type="text" value="<?=$part?>" class="form-control" name="part" id="exampleInputEmail1" placeholder="Veuillez sair le nom de la personne qui a effectué la depense" required="">
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label for="prix">Description</label>
                                                         <?php global $description?>
-                                                        <textarea name="description" class="form-control" id="" cols="30" rows="10" placeholder="Veuillez saisir une description"><?=$description?></textarea>
+                                                        <textarea name="description" class="form-control" id="" cols="15" rows="9" placeholder="Veuillez saisir une description"><?=$description?></textarea>
                                                     </div>
                                                 </div>
                                             </div>

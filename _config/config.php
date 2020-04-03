@@ -32,7 +32,7 @@ define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9)); // Pour fonc
 define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers etc (html)
 define("LOCALHOST", $_SERVER['HTTP_HOST']);
 define("SECURITY","https://");
-define("NOTSECURITY","https://");
+define("NOTSECURITY","http://");
 define("DIR",NOTSECURITY.LOCALHOST.PATH);
 
 

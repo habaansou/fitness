@@ -25,11 +25,10 @@
             <?php endforeach;?>
         <?php endif;?>
         <ul class="side-menu ">
-            <li><h3>Accueil</h3></li>
             <li class="slide">
                 <a class="side-menu__item" href="<?=DIR.'tableau_de_bord'?>"><i class="side-menu__icon ti-home"></i><span class="side-menu__label">Tableau de bord</span><span class="badge badge-primary side-badge">1</span></a>
             </li>
-            <li><h3>Gestion du Personnel</h3></li>
+            <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-user"></i><span class="side-menu__label">Employés</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
@@ -39,7 +38,14 @@
                     <li><a class="slide-item" href="<?=DIR.'liste_des_paiments'?>">Liste des Paiements</a></li>
                 </ul>
             </li>
-            <li><h3>Inscriptions</h3></li>
+            <?php endif;?>
+            <li class="slide">
+                <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-flag"></i><span class="side-menu__label">Dépenses</span><i class="angle fe fe-chevron-down"></i></a>
+                <ul class="slide-menu">
+                    <li><a class="slide-item" href="<?=DIR.'nouvelle_depense'?>">Nouvelle Dépense</a></li>
+                    <li><a class="slide-item" href="<?=DIR.'liste_des_depenses'?>">Liste des Dépenses depense</a></li>
+                </ul>
+            </li>
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-unlink"></i><span class="side-menu__label">Clients</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
@@ -51,7 +57,7 @@
                     <li><a class="slide-item" href="<?=DIR.'historiques'?>">Historique des paiments</a></li>
                 </ul>
             </li>
-            <li><h3>Gestion des fournisseurs</h3></li>
+            <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-wallet"></i><span class="side-menu__label">Fournisseurs</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
@@ -59,14 +65,17 @@
                     <li><a class="slide-item" href="<?=DIR.'liste_des_fournisseurs'?>">Liste des Fournisseurs</a></li>
                 </ul>
             </li>
-            <li><h3>Ventes</h3></li>
+            <?php endif;?>
             <li class="slide">
                 <a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-money"></i><span class="side-menu__label">Vente de Produit</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
-                    <li><a class="slide-item" href="<?=DIR.'categories'?>">Gestion des catégories</a></li>
-                    <li><a class="slide-item" href="<?=DIR.'nouveau_produit'?>">Nouveau Produit</a></li>
-                    <li><a class="slide-item" href="<?=DIR.'liste_des_produits'?>">Liste des produits</a></li>
-                    <li><a class="slide-item" href="<?=DIR.'ventes'?>">Liste des ventes</a></li>
+                    <li><a class="slide-item" href="<?=DIR.'nouvelle_vente'?>">Nouvelle Vente</a></li>
+                    <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
+                        <li><a class="slide-item" href="<?=DIR.'categories'?>">Gestion des catégories</a></li>
+                        <li><a class="slide-item" href="<?=DIR.'nouveau_produit'?>">Nouveau Produit</a></li>
+                        <li><a class="slide-item" href="<?=DIR.'liste_des_produits'?>">Liste des produits</a></li>
+                        <li><a class="slide-item" href="<?=DIR.'ventes'?>">Liste des ventes</a></li>
+                    <?php endif; ?>
                 </ul>
             </li>
         </ul>

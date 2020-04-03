@@ -10,9 +10,6 @@ $success = [];
 $warnings = [];
 $errors = [];
 
- if(isset($_POST) AND !empty($_POST) AND $_POST['Valider']=="Valider"){
-     extract($_POST);
-     debug($_POST);
- }
+$getHistoriques = \_classes\Historiques::getHistoriques();
 
 

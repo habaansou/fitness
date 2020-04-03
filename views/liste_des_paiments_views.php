@@ -98,7 +98,9 @@
                                     <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Date Paiement</font></font></th>
                                     <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mois</font></font></th>
                                     <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Années</font></font></th>
+                                    <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                     <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actions</font></font></th>
+                                    <?php endif;?>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -114,6 +116,7 @@
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->datePaiements),'d/m/Y')?></font></font></td>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=ucfirst($get->moisPaiements )?></font></font></td>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=ucfirst($get->anneePaiements)?></font></font></td>
+                                            <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                         <div class="btn-icon-list wd-xl-80p">
                                                             <a href="<?=DIR.'liste_des_paiments/'.$get->idPersonnels?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
@@ -122,6 +125,7 @@
                                                     </font>
                                                 </font>
                                             </td>
+                                            <?php endif;?>
                                         </tr>
                                     <?php endforeach;?>
                                 <?php endif;?>

@@ -21,7 +21,6 @@
     <!-- main-header -->
     <?php require_once("includes/header.php");?>
     <!-- /main-header -->
-
     <!-- container -->
     <div class="container-fluid">
         <!-- breadcrumb -->
@@ -30,7 +29,7 @@
                 <div class="d-flex">
                     <h4 class="content-title mb-0 my-auto">
                         <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Liste des réinscrits</font>
+                            <font style="vertical-align: inherit;">Liste des dépenses</font>
                         </font>
                     </h4><span class="text-muted mt-1 tx-13 ml-2 mb-0">
                 </div>
@@ -79,53 +78,44 @@
                 <div class="card">
                     <div class="card-header pb-0">
                         <div class="d-flex justify-content-between">
-                            <h4 class="card-title mg-b-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LISTE DES REINSCRITS</font></font></h4>
+                            <h4 class="card-title mg-b-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LISTE DES DEPENSES</font></font></h4>
                             <i class="mdi mdi-dots-horizontal text-gray"></i>
                         </div>
-                        <p class="tx-12 tx-gray-500 mb-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ceci est la liste détailles des clients avec les options modifier et supprimer. </font></font><a href="#"><font style="vertical-align: inherit;"></font></a></p>
+                        <p class="tx-12 tx-gray-500 mb-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ceci est la liste détailles des dépenses avec les options modifier et supprimer. </font></font><a href="#"><font style="vertical-align: inherit;"></font></a></p>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table text-md-nowrap" id="example1">
                                 <thead>
                                 <tr>
-                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Matricules</font></font></th>
-                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prénoms</font></font></th>
-                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nom de famille</font></font></th>
-                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dates d'inscription</font></font></th>
-                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dates de fin</font></font></th>
-                                    <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Frais</font></font></th>
-                                    <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Notifications</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Références</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Libélles</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Montants</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Par Qui ?</font></font></th>
+                                    <th class="wd-15p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilisateurs</font></font></th>
+                                    <th class="wd-10p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dates Dépenses</font></font></th>
+                                    <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Date Enregistrement</font></font></th>
                                     <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                     <th class="wd-25p border-bottom-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actions</font></font></th>
                                     <?php endif;?>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php if(isset($getClient) AND !empty($getClient)):?>
-                                    <?php foreach($getClient as $get):?>
+                                <?php if(isset($getDepenses) AND !empty($getDepenses)):?>
+                                    <?php foreach($getDepenses as $get):?>
                                         <tr>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->matriculeClients?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->prenomClients?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->nomClients?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateIncrisClients),'d/m/Y')?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateExpirations),'d/m/Y')?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=number_format($get->fraisClients,'2','.',',').' GNF'?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                                                        <h3 class="badge badge-warning">
-                                                            <?php
-                                                            $datefin = date('Y-m-d');
-                                                            $datedebut = date_format(date_create($get->dateExpirations),'Y-m-d');
-                                                            echo dateDifdateEnDay($datedebut,$datefin)?> Jours
-                                                        </h3>
-                                                    </font>
-                                                </font>
-                                            </td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?='FITNESS'.$get->idDepenses.'DEP'?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->libelleDepenses?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=number_format($get->montantDepenses,'2','.',',').' GNF'?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=ucfirst($get->depensesPar)?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=ucfirst($get->prenomPersonnels).' '.ucfirst($get->nomPersonnels)?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateDepenses),'d/m/Y')?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateTemps),'d/m/Y à h:m:s')?></font></font></td>
                                             <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                         <div class="btn-icon-list wd-xl-80p">
-                                                            <a href="<?=DIR.'modification_client/'.$get->idClients?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
-                                                            <a href="<?=DIR.'liste_des_clients/'.$get->idClients?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
+                                                            <a href="<?=DIR.'liste_des_depenses/'.$get->idPersonnels?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
+                                                            <a href="<?=DIR.'liste_des_depenses/'.$get->idPersonnels?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
                                                         </div>
                                                     </font>
                                                 </font>

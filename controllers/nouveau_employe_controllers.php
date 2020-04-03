@@ -69,7 +69,7 @@ if(isset($_POST) AND !empty($_POST) AND $_POST['Envoyer']=="Envoyer") {
             array_push($errors,'Ce fichier n\'est une image');
         }
         $uniqAvatarName = uniqid().$AvatarName;
-        move_uploaded_file($AvatarTmp,'assets/img/users'.$uniqAvatarName);
+        move_uploaded_file($AvatarTmp,'assets/img/users/'.$uniqAvatarName);
     }
     if(\_classes\Users::verifyUsers($email,$identifient)==1){
         array_push($errors,"Erreur : {$identifient}/{$email} cet identifient est déjà utilisé");
