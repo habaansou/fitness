@@ -24,6 +24,16 @@ class Historiques
         }
         return $resultats;
     }
+    public static function getAllHistoriqueByEmail(string $email):array {
+        global $db;
+        $req=$db->prepare("SELECT * FROM historiques INNER JOIN clients INNER JOIN personnels WHERE historiques.matriculeClients=clients.matriculeClients AND personnels.emailPersonnels=historiques.users AND personnels.emailPersonnels= ?");
+        $req->execute();
+        $resultats = [];
+        while($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        return $resultats;
+    }
     public static function getHistoriques():array {
         global $db;
         $req=$db->prepare("SELECT * FROM historiques INNER JOIN clients WHERE historiques.matriculeClients=clients.matriculeClients ORDER BY 	idInscriptions LIMIT 5");

@@ -34,7 +34,8 @@ if(isset($_POST) AND !empty($_POST) AND $_POST['Valider']=="Valider"){
 
     }
     if(count($warnings)==0 AND count($errors)==0){
-
+        \_classes\Personnels::updatePersonnels($nom,$prenom,$adresse,$pseudo);
+        \_classes\Users::updateUsers(hashpassword($password2),$pseudo);
         array_push($success,"Information de : {$prenom} {$nom} modifiée avec succès");
     }
 

@@ -69,4 +69,10 @@ class Personnels
         $req->closeCursor();
         return $resultats;
     }
+    public static function updatePersonnels(string $nomPersonnels, string $prenomPersonnels, string $adressePersonnels, string $identifientPersonnels):void{
+        global $db;
+        $req=$db->prepare("UPDATE personnels SET nomPersonnels = ?, prenomPersonnels = ?, adressePersonnels = ? WHERE identifientPersonnels = ?;");
+        $req->execute([strscr($nomPersonnels), strscr($prenomPersonnels), strscr($adressePersonnels), strscr($identifientPersonnels)]);
+        $req->closeCursor();
+    }
 }

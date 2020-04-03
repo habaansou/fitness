@@ -19,4 +19,11 @@ class Users
         $req->closeCursor();
         return $req->rowCount();
     }
+    public static function updateUsers(string $password, string $login):void{
+        global $db;
+        $req=$db->prepare("UPDATE users SET passwordUsers = ? WHERE identifientUsers = ?;");
+        $req->execute([strscr($password),strscr($login)]);
+        $req->closeCursor();
+    }
+
 }

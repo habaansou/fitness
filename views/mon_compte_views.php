@@ -23,7 +23,7 @@
     <!-- /main-header -->
     <?php
     if(isset($getProfile) AND !empty($getProfile)):?>
-    <?php foreach ($getProfile as $get):?>
+    <?php foreach ($getProfile as $item):?>
     <!-- container -->
     <div class="container-fluid">
 
@@ -97,7 +97,7 @@
                 <div class="card stats">
                     <div class="card-body">
                         <div class="text-center">
-                                <img alt="user-img" class="avatar avatar-xxl brround" src="<?=DIR?>assets/img/users/<?=$get->photoPersonnels;?>" class="ht-136 wd-230">
+                                <img alt="user-img" class="avatar avatar-xxl brround" src="<?=DIR?>assets/img/users/<?=$item->photoPersonnels;?>" class="ht-136 wd-230">
                         </div>
                         <div class="row mt-0">
                             <div class="col-12">
@@ -107,7 +107,7 @@
 											</span>
                                     <div class="ml-3">
                                         <h5 class="mb-0">Prénom : </h5>
-                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$get->prenomPersonnels?></h5>
+                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$item->prenomPersonnels?></h5>
                                     </div>
                                 </div>
                                 <div class="py-4 d-flex border-bottom">
@@ -116,7 +116,7 @@
 											</span>
                                     <div class="ml-3">
                                         <h5 class="mb-0">Nom : </h5>
-                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$get->nomPersonnels?></h5>
+                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$item->nomPersonnels?></h5>
                                     </div>
                                 </div>
                                 <div class="py-4 d-flex border-bottom">
@@ -125,7 +125,7 @@
 											</span>
                                     <div class="ml-3">
                                         <h5 class="mb-0">Fonction : </h5>
-                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$get->nameFonctions?></h5>
+                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$item->nameFonctions?></h5>
                                     </div>
                                 </div>
                                 <div class="py-4 d-flex border-bottom">
@@ -134,7 +134,7 @@
 											</span>
                                     <div class="ml-3">
                                         <h5 class="mb-0">Profession : </h5>
-                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$get->roleUsers?> </h5>
+                                        <h5 class="mb-0" style="color: #0fb2fc"><?=$item->roleUsers?> </h5>
                                     </div>
                                 </div>
                             </div>
@@ -155,25 +155,25 @@
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Identifient</label>
-                                        <input type="text" class="form-control" readonly name="pseudo" value="<?=$get->identifientPersonnels?>">
+                                        <input type="text" class="form-control" readonly name="pseudo" value="<?=$item->identifientPersonnels?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Nom</label>
-                                        <input type="text" value="<?=$get->nomPersonnels?>"  class="form-control" id="nom" name="nom" required="">
+                                        <input type="text" value="<?=$item->nomPersonnels?>"  class="form-control" id="nom" name="nom" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Prénom</label>
-                                        <input type="text" value="<?=$get->prenomPersonnels?>"  class="form-control" name="prenom" id="prenom" required="">
+                                        <input type="text" value="<?=$item->prenomPersonnels?>"  class="form-control" name="prenom" id="prenom" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Adresse</label>
-                                        <input type="text" value="<?=$get->adressePersonnels?>"  class="form-control" name="adresse" id="adresse" required="">
+                                        <input type="text" value="<?=$item->adressePersonnels?>"  class="form-control" name="adresse" id="adresse" required="">
                                     </div>
                                 </div>
                                 <div class="row row-xs wd-xl-80p">
@@ -186,13 +186,13 @@
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Salaire de base</label>
-                                        <input type="text" readonly value="<?=number_format($get->salairePersonnels,'2','.',',').' GNF'?>" class="form-control" name="salaire" id="salaire" required="">
+                                        <input type="text" readonly value="<?=number_format($item->salairePersonnels,'2','.',',').' GNF'?>" class="form-control" name="salaire" id="salaire" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label class="mg-b-10">Date d'embauche</label>
-                                        <input type="text" value="<?=date_format(date_create($get->dateDembausePersonnels),'d/m/Y')?>" readonly class="form-control" name="datedembauche" id="datedembauche" required="">
+                                        <input type="text" value="<?=date_format(date_create($item->dateDembausePersonnels),'d/m/Y')?>" readonly class="form-control" name="datedembauche" id="datedembauche" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">

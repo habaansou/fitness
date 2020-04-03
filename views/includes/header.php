@@ -115,7 +115,7 @@
                                 </div>
                                 <a class="dropdown-item" href="<?=DIR.'mon_compte'?>"><i class="far fe fe-user"></i> Mon Compte</a>
                                 <a class="dropdown-item" href="<?=DIR.'mes_historiques'?>"><i class="far fe fe-clock"></i> Historique</a>
-                                <a class="dropdown-item" href="<?=DIR.'veroullage'?>"><i class="fas fe fe-log-in"></i> Véroullage</a>
+                            <!--<a class="dropdown-item" href="<?=DIR.'veroullage'?>"><i class="fas fe fe-log-in"></i> Véroullage</a>-->
                                 <a class="dropdown-item" href="<?=DIR.'deconnexion'?>"><i class="fas fe fe-log-out"></i> Déconnexion</a>
                             </div>
                         </div>
