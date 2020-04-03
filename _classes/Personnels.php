@@ -47,7 +47,7 @@ class Personnels
         $req->execute([strscr($id)]);
         $req->closeCursor();
     }
-    public static function getAllPersonnelsById(string $id){
+    public static function getAllPersonnelsById(string $id):array {
         global $db;
         $req=$db->prepare("SELECT * FROM personnels INNER JOIN fonctions INNER JOIN professions ON personnels.idFonctions=fonctions.idFonctions AND personnels.idProfessions=professions.idProfessions WHERE personnels.idPersonnels = ?");
         $req->execute([strscr($id)]);
@@ -57,5 +57,16 @@ class Personnels
         }
         $req->closeCursor();
         return $resulats;
+    }
+    public static function getUsersByEmail(string $email):array {
+        global $db;
+        $req=$db->prepare("SELECT * FROM personnels INNER JOIN users INNER JOIN fonctions INNER JOIN professions WHERE users.emailUsers=personnels.emailPersonnels AND personnels.idFonctions=fonctions.idFonctions AND personnels.idProfessions=professions.idProfessions AND emailPersonnels = ?;");
+        $req->execute([strscr($email)]);
+        $resultats = [];
+        while($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
     }
 }
