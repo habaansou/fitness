@@ -1,0 +1,8 @@
+[01-Jan-2020 12:27:27 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Onlines::getInscriptionById() in /home/c1123338c/public_html/plugins/pdf/formulaire.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/c1123338c/public_html/plugins/pdf/formulaire.php on line 97
+[01-Jan-2020 12:27:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined method Onlines::getInscriptionById() in /home/c1123338c/public_html/plugins/pdf/formulaire.php:97
+Stack trace:
+#0 {main}
+  thrown in /home/c1123338c/public_html/plugins/pdf/formulaire.php on line 97

@@ -121,16 +121,17 @@
                                                     </font>
                                                 </font>
                                             </td>
-                                            <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                         <div class="btn-icon-list wd-xl-80p">
+                                                            <a href="<?=DIR.'imprimer/'.$get->idClients?>"><button class="btn btn-success btn-icon"><i class="typcn typcn-printer"></i></button></a>
+                                                            <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                                             <a href="<?=DIR.'modification_client/'.$get->idClients?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
                                                             <a href="<?=DIR.'liste_des_clients/'.$get->idClients?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
+                                                            <?php endif;?>
                                                         </div>
                                                     </font>
                                                 </font>
                                             </td>
-                                            <?php endif;?>
                                         </tr>
                                     <?php endforeach;?>
                                 <?php endif;?>

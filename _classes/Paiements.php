@@ -23,4 +23,11 @@ class Paiements
         $req->closeCursor();
         return $resultats;
     }
+    public static function getCountPayement():int {
+        global $db;
+        $req=$db->prepare("SELECT SUM(montantPaiements) as montant FROM paiements");
+        $req->execute();
+        return $req->fetchColumn();
+    }
+
 }

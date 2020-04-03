@@ -69,16 +69,26 @@
                         <div class="pb-0 mt-0">
                             <p class="mb-3 tx-12 text-muted">Montant Récolté</p>
                             <div class="d-flex">
-                                <h4 class="tx-22 font-weight-bold mb-1">1,230.17 GNF
+                                <h4 class="tx-22 font-weight-bold mb-1">
                                     <?php
                                     $d = date('Y-m-d');
-                                    //$getMontant = \_classes\Historiques::getCountHistoriquesDay($d);
-                                    //echo "78890";
-                                    ?></h4>
+                                    if(!empty($getMontantDuJour = \_classes\Historiques::getCountHistoriquesDay($d)))
+                                    {
+                                        foreach ($getMontantDuJour as $item){
+                                            if($item->montant!=null){
+                                                echo number_format($item->montant,'2','.',',').' GNF';
+                                            }else{
+                                                echo "0,00 GNF";
+                                            }
+
+                                        }
+                                    };
+                                    ?>
+                                </h4>
                                 <span class="float-right my-auto ml-auto">
 											<i class="fas fa-arrow-circle-up text-success"></i>
 											<span class="text-muted"> +427</span>
-										</span>
+                                </span>
                             </div>
                             <i class="ion ion-md-basket  sales-icon f-30 text-primary bg-primary-transparent"></i>
                         </div>
@@ -95,7 +105,22 @@
                         <div class="pb-0 mt-0">
                             <p class="mb-3 tx-12 text-muted">Information des dépenses</p>
                             <div class="d-flex">
-                                <h4 class="tx-22 font-weight-bold mb-1">1,230.17 GNF</h4>
+                                <h4 class="tx-22 font-weight-bold mb-1">
+                                    <?php
+                                    $d = date('Y-m-d');
+                                    if(!empty($getMontantDepenseDuJour = \_classes\Depenses::getCountDepenseDay($d)))
+                                    {
+                                        foreach ($getMontantDepenseDuJour as $item){
+                                            if($item->montant!=null){
+                                                echo number_format($item->montant,'2','.',',').' GNF';
+                                            }else{
+                                                echo "0,00 GNF";
+                                            }
+
+                                        }
+                                    };
+                                    ?>
+                                </h4>
                                 <span class="float-right my-auto ml-auto">
 											<i class="fas fa-arrow-circle-down text-danger"></i>
 											<span class="text-muted"> -23.09%</span>
@@ -114,9 +139,24 @@
                             <h6 class="mb-1">TOTALS INSCRIPTIONS</h6>
                         </div>
                         <div class="pb-0 mt-0">
-                            <p class="mb-3 tx-12 text-muted">Montant mensuelk</p>
+                            <p class="mb-3 tx-12 text-muted">Montant mensuel</p>
                             <div class="d-flex">
-                                <h4 class="tx-22 font-weight-bold mb-1">7,125.70 GNF</h4>
+                                <h4 class="tx-22 font-weight-bold mb-1">
+                                    <?php
+                                    $d = date('Y-m-d');
+                                    if(!empty($getMontantInscriptionDuJour = \_classes\Historiques::getCountHistoriquesDay($d)))
+                                    {
+                                        foreach ($getMontantInscriptionDuJour as $item){
+                                            if($item->montant!=null){
+                                                echo number_format($item->montant,'2','.',',').' GNF';
+                                            }else{
+                                                echo "0,00 GNF";
+                                            }
+
+                                        }
+                                    };
+                                    ?>
+                                </h4>
                                 <span class="float-right my-auto ml-auto">
 											<i class="fas fa-arrow-circle-up text-success"></i>
 											<span class="text-muted"> 52.09%</span>
@@ -137,7 +177,22 @@
                         <div class="pb-0 mt-0">
                             <p class="mb-3 tx-12 text-muted">Information du mois</p>
                             <div class="d-flex">
-                                <h4 class="tx-22 font-weight-bold mb-1">4,820.50 GNF</h4>
+                                <h4 class="tx-22 font-weight-bold mb-1">
+                                    <?php
+                                    $d = date('Y-m-d');
+                                    if(!empty($getMontantReinscriptionDuJour = \_classes\Historiques::getCountHistoriquesReinscriptionDay($d)))
+                                    {
+                                        foreach ($getMontantReinscriptionDuJour as $item){
+                                            if($item->montant!=null){
+                                                echo number_format($item->montant,'2','.',',').' GNF';
+                                            }else{
+                                                echo "0,00 GNF";
+                                            }
+
+                                        }
+                                    };
+                                    ?>
+                                </h4>
                                 <span class="float-right my-auto ml-auto">
 											<i class="fas fa-arrow-circle-down text-danger"></i>
 											<span class="text-muted"> -152.3</span>
@@ -164,11 +219,21 @@
                             <div class="col-12">
                                 <div class="py-4 d-flex border-bottom">
 											<span class="icon border-primary-light bg-primary-transparent mt-1">
-												<i class="ion ion-md-wallet tx-primary"></i>
+												<i class="ion ion-md-pint tx-primary"></i>
 											</span>
                                     <div class="ml-3">
-                                        <p class="mb-1">Sortiées</p>
-                                        <h5 class="mb-0"><?= number_format(\_classes\Depenses::getCountDepenses(),'2','.',',').' GNF'?></h5>
+                                        <p class="mb-1">SOLDE</p>
+                                        <h5 class="mb-0"><?php
+                                            $montantPayementEmployer =  \_classes\Paiements::getCountPayement();
+                                            $montantDepense = \_classes\Depenses::getCountDepenses();
+                                            $montantEntreClient = \_classes\Historiques::getCountHistoriques();
+                                            if($montantPayementEmployer==null AND $montantDepense==null AND $montantEntreClient==null){
+                                                $montantPayementEmployer=0;
+                                                $montantDepense=0;
+                                                $montantEntreClient=0;
+                                            }
+                                            $montant = $montantEntreClient-($montantPayementEmployer+$montantDepense);
+                                            echo number_format($montant,'2','.',',').' GNF'; ?></h5>
                                     </div>
                                     <div class="ml-auto"><i class="icon-arrow-down-circle tx-danger"></i><span class="text-muted ml-2">2.12 %</span></div>
                                 </div>
@@ -181,6 +246,16 @@
                                         <h5 class="mb-0"><?=number_format(\_classes\Historiques::getCountHistoriques(),'2','.',',').' GNF'?></h5>
                                     </div>
                                     <div class="ml-auto"><i class="icon-arrow-up-circle tx-success"></i><span class="text-muted ml-2">3.45 %</span></div>
+                                </div>
+                                <div class="py-4 d-flex border-bottom">
+											<span class="icon border-primary-light bg-primary-transparent mt-1">
+												<i class="ion ion-md-wallet tx-primary"></i>
+											</span>
+                                    <div class="ml-3">
+                                        <p class="mb-1">Sortiées</p>
+                                        <h5 class="mb-0"><?= number_format(\_classes\Depenses::getCountDepenses(),'2','.',',').' GNF'?></h5>
+                                    </div>
+                                    <div class="ml-auto"><i class="icon-arrow-down-circle tx-danger"></i><span class="text-muted ml-2">2.12 %</span></div>
                                 </div>
                             </div>
                         </div>

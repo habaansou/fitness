@@ -11,5 +11,17 @@ $warnings = [];
 $errors = [];
 
 $getHistoriques = \_classes\Historiques::getHistoriques();
+$d = date('Y-d-m');
+$getHistoriqueDay = \_classes\Historiques::getCountHistoriquesDay($d);
+
+//$getDepenseDay = \_classes\Depenses::getCountDepenseDay($d);
+
+
+//$getInscriptionDay = \_classes\Historiques::getCountHistoriquesDay($d);
+
+
+//$getRinscriptionDay = \_classes\Historiques::getCountHistoriquesDay($d);
+
+
 
 

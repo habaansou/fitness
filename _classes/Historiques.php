@@ -4,6 +4,8 @@
 namespace _classes;
 
 
+use Cassandra\Date;
+
 class Historiques
 {
     public static function addhistoriques(string $matriculeClients, string $dateInscriptions, string $dateExpirations, string $mois,string $stat, string $frais, string $sports):void{
@@ -38,10 +40,26 @@ class Historiques
         $req->execute();
         return $req->fetchColumn();
     }
-    public static function getCountHistoriquesDay(string $date):int {
+    public static function getCountHistoriquesDay(string $date):array {
         global $db;
-        $req=$db->prepare("SELECT SUM(frais) FROM historiques WHERE dateInscriptions = ? AND stat = '1';");
+        $req=$db->prepare("SELECT SUM(frais) as montant FROM historiques WHERE dateInscriptions = ? AND stat = '1';");
         $req->execute([strscr($date)]);
-        return $req->fetchColumn();
+        $resultats = [];
+        while ($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
+    }
+    public static function getCountHistoriquesReinscriptionDay(string $date):array {
+        global $db;
+        $req=$db->prepare("SELECT SUM(frais) as montant FROM historiques WHERE dateInscriptions = ? AND stat = '2';");
+        $req->execute([strscr($date)]);
+        $resultats = [];
+        while ($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
     }
 }
