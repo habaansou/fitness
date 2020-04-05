@@ -116,8 +116,12 @@
                                                 <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                                 <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                             <div class="btn-icon-list wd-xl-80p">
-                                                                <a href="<?=DIR.'modification_employe/'.$get->idPersonnels?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
-                                                                <a href="<?=DIR.'liste_des_employes/'.$get->idPersonnels?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
+                                                                <a data-effect="effect-rotate-bottom" data-toggle="modal" href="#modaldemo1" data-href="<?=DIR.'modification_employe/'.$get->idPersonnels?>">
+                                                                    <button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
+                                                                <a  data-effect="effect-rotate-bottom" data-toggle="modal" data-href="<?=DIR.'liste_des_employes/'.$get->idPersonnels?>" href="#modaldemo1" id="modale">
+                                                                    <button class="btn btn-danger btn-icon"><i class="typcn typcn-trash"></i>
+                                                                    </button>
+                                                                </a>
                                                             </div>
                                                         </font>
                                                     </font>

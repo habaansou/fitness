@@ -25,3 +25,21 @@ $getHistoriqueDay = \_classes\Historiques::getCountHistoriquesDay($d);
 
 
 
+
+/*debug(\_classes\Paiements::getCountPayement());
+ * $montantPayementEmployer =
+ * $montantDepense = \_classes\Depenses::getCountDepenses();
+$montantEntreClient = \_classes\Historiques::getCountHistoriques();
+if($montantPayementEmployer==null AND $montantDepense==null AND $montantEntreClient==null){
+    $montantPayementEmployer=0;
+    $montantDepense=0;
+    $montantEntreClient=0;
+    $montant = 0.0;
+}else{
+    $montant = $montantEntreClient-($montantPayementEmployer+$montantDepense);
+}
+*/
+
+
+
+

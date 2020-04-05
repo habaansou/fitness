@@ -126,7 +126,10 @@
                                                             <a href="<?=DIR.'plugins/pdf/recu_inscription.php?id='.$get->idInscriptions?>"><button class="btn btn-success btn-icon"><i class="typcn typcn-printer"></i></button></a>
                                                             <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                                             <a href="<?=DIR.'modification_client/'.$get->idClients?>"><button class="btn btn-indigo btn-icon"><i class="typcn typcn-edit"></i></button></a>
-                                                            <a href="<?=DIR.'liste_des_clients/'.$get->idClients?>"><button class="btn btn-primary btn-icon"><i class="typcn typcn-trash"></i></button></a>
+                                                                <a  data-effect="effect-rotate-bottom" data-toggle="modal" data-href="<?=DIR.'liste_des_clients/'.$get->idClients?>" href="#modaldemo1" id="modale">
+                                                                    <button class="btn btn-danger btn-icon"><i class="typcn typcn-trash"></i>
+                                                                    </button>
+                                                                </a>
                                                             <?php endif;?>
                                                         </div>
                                                     </font>

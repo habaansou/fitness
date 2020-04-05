@@ -23,11 +23,22 @@ class Paiements
         $req->closeCursor();
         return $resultats;
     }
-    public static function getCountPayement():int {
+    public static function getCountPayement():array {
         global $db;
         $req=$db->prepare("SELECT SUM(montantPaiements) as montant FROM paiements");
         $req->execute();
-        return $req->fetchColumn();
+        $resultats = [];
+        while($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
+    }
+    public static function deletePaiment(string $id):void {
+        global $db;
+        $req=$db->prepare("DELETE FROM paiements WHERE idPaiements = ?");
+        $req->execute([strscr($id)]);
+        return $req->closeCursor();
     }
 
 }

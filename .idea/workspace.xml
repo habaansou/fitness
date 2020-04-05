@@ -2,15 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3864c630-41d8-4c1c-89a2-c937983ab3ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89999a514a01200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e8999bb94c290.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e8999df190cf1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89a47065a7e1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89a50c120261200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classes/Historiques.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Historiques.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classes/Personnels.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Personnels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_classes/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/mes_historiques_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mes_historiques_controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/mon_compte_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/mon_compte_controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_classes/Paiements.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Paiements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/myscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/myscripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/liste_des_paiments_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/liste_des_paiments_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tableau_de_bord_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/tableau_de_bord_models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historiques_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_clients_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_clients_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_depenses_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_depenses_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_employes_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_employes_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_inscrits_views.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_mouvements_views.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_paiments_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_paiments_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_produits_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_produits_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_projets_views.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/mes_historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/mes_historiques_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mon_compte_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/mon_compte_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tableau_de_bord_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/tableau_de_bord_views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +105,8 @@
       <workItem from="1585776866923" duration="13326000" />
       <workItem from="1585817551857" duration="1435000" />
       <workItem from="1585848774978" duration="35702000" />
-      <workItem from="1585937369079" duration="9211000" />
+      <workItem from="1585937369079" duration="10220000" />
+      <workItem from="1586015888363" duration="7781000" />
     </task>
     <servers />
   </component>

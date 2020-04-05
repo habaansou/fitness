@@ -224,16 +224,12 @@
                                     <div class="ml-3">
                                         <p class="mb-1">SOLDE</p>
                                         <h5 class="mb-0"><?php
-                                            $montantPayementEmployer =  \_classes\Paiements::getCountPayement();
-                                            $montantDepense = \_classes\Depenses::getCountDepenses();
-                                            $montantEntreClient = \_classes\Historiques::getCountHistoriques();
-                                            if($montantPayementEmployer==null AND $montantDepense==null AND $montantEntreClient==null){
-                                                $montantPayementEmployer=0;
-                                                $montantDepense=0;
-                                                $montantEntreClient=0;
+                                            if(isset($montant) AND !empty($montant)){
+                                            echo  number_format($montant,'2','.',',').' GNF';
+                                            }else{
+                                                echo "0,0 GNF";
                                             }
-                                            $montant = $montantEntreClient-($montantPayementEmployer+$montantDepense);
-                                            echo number_format($montant,'2','.',',').' GNF'; ?></h5>
+                                           ?></h5>
                                     </div>
                                     <div class="ml-auto"><i class="icon-arrow-down-circle tx-danger"></i><span class="text-muted ml-2">2.12 %</span></div>
                                 </div>
