@@ -239,7 +239,19 @@
 											</span>
                                     <div class="ml-3">
                                         <p class="mb-1">Entrées</p>
-                                        <h5 class="mb-0"><?=number_format(\_classes\Historiques::getCountHistoriques(),'2','.',',').' GNF'?></h5>
+                                        <h5 class="mb-0">
+                                            <?php
+                                                if(isset($montantHistorique) AND !empty($montantHistorique)):
+                                                    foreach ($montantHistorique as $get){
+                                                        if(isset($get->montant) AND !empty($get->montant)){
+                                                            echo  number_format($get->montant,'2','.',',').' GNF';
+                                                        }else{
+                                                            echo "0,0 GNF";
+                                                        }
+                                                    }
+                                                endif;
+                                        ?>
+                                        </h5>
                                     </div>
                                     <div class="ml-auto"><i class="icon-arrow-up-circle tx-success"></i><span class="text-muted ml-2">3.45 %</span></div>
                                 </div>
@@ -249,7 +261,19 @@
 											</span>
                                     <div class="ml-3">
                                         <p class="mb-1">Sortiées</p>
-                                        <h5 class="mb-0"><?= number_format(\_classes\Depenses::getCountDepenses(),'2','.',',').' GNF'?></h5>
+                                        <h5 class="mb-0">
+                                            <?php
+                                                if(isset($montantDepenses) AND !empty($montantDepenses)):
+                                                    foreach ($montantDepenses as $get){
+                                                        if(isset($get->montant) AND !empty($get->montant)){
+                                                            echo  number_format($get->montant,'2','.',',').' GNF';
+                                                        }else{
+                                                            echo "0,0 GNF";
+                                                        }
+                                                    }
+                                                endif;
+                                            ?>
+                                        </h5>
                                     </div>
                                     <div class="ml-auto"><i class="icon-arrow-down-circle tx-danger"></i><span class="text-muted ml-2">2.12 %</span></div>
                                 </div>

@@ -24,12 +24,25 @@ $getHistoriqueDay = \_classes\Historiques::getCountHistoriquesDay($d);
 
 
 
+global $montantDepense;
+$depense = \_classes\Depenses::getCountDepenses();
+foreach ($depense as $get){
+    $montantDepense=$get->montant;
+}
+
+global $montantPayementEmployer;
+$montantPayement = \_classes\Paiements::getCountPayement();
+foreach ($montantPayement as $get){
+  $montantPayementEmployer=$get->montant;
+}
 
 
-/*debug(\_classes\Paiements::getCountPayement());
- * $montantPayementEmployer =
- * $montantDepense = \_classes\Depenses::getCountDepenses();
-$montantEntreClient = \_classes\Historiques::getCountHistoriques();
+global $montantEntreClient;
+$entres = \_classes\Historiques::getCountHistoriques();
+foreach ($entres as $get){
+    $montantEntreClient=$get->montant;
+}
+
 if($montantPayementEmployer==null AND $montantDepense==null AND $montantEntreClient==null){
     $montantPayementEmployer=0;
     $montantDepense=0;
@@ -38,8 +51,10 @@ if($montantPayementEmployer==null AND $montantDepense==null AND $montantEntreCli
 }else{
     $montant = $montantEntreClient-($montantPayementEmployer+$montantDepense);
 }
-*/
 
 
+$montantHistorique = \_classes\Historiques::getCountHistoriques();
 
+
+$montantDepenses = \_classes\Depenses::getCountDepenses();
 

@@ -44,11 +44,16 @@ class Historiques
         }
         return $resultats;
     }
-    public static function getCountHistoriques():int {
+    public static function getCountHistoriques():array {
         global $db;
-        $req=$db->prepare("SELECT SUM(frais) as montants FROM historiques");
+        $req=$db->prepare("SELECT SUM(frais) as montant FROM historiques");
         $req->execute();
-        return $req->fetchColumn();
+        $resultats = [];
+        while ($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
     }
     public static function getCountHistoriquesDay(string $date):array {
         global $db;

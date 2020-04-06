@@ -30,11 +30,16 @@ class Depenses
         $req->execute([strscr($id)]);
         $req->closeCursor();
     }
-    public static function getCountDepenses():int {
+    public static function getCountDepenses():array {
         global $db;
         $req=$db->prepare("SELECT SUM(montantDepenses) as montant FROM depenses");
         $req->execute();
-        return $req->fetchColumn();
+        $resultats = [];
+        while($data = $req->fetchObject()){
+            array_push($resultats,$data);
+        }
+        $req->closeCursor();
+        return $resultats;
     }
     public static function getCountDepenseDay(string $date):array {
         global $db;
