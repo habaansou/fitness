@@ -2,31 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3864c630-41d8-4c1c-89a2-c937983ab3ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89999a514a01200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e8999bb94c290.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e8999df190cf1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89a47065a7e1200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89a50c120261200px-HTML5_logo_and_wordmark.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/users/5e89b5a2717dbalseny.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fitness.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fitness.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_classes/Paiements.php" beforeDir="false" afterPath="$PROJECT_DIR$/_classes/Paiements.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/myscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/myscripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/liste_des_paiments_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/liste_des_paiments_controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/tableau_de_bord_controllers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tableau_de_bord_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/tableau_de_bord_models.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/historiques_views.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/paiment_employe_controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/paiment_employe_controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/categories_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/categories_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_clients_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_clients_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_depenses_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_depenses_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_employes_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_employes_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_fournisseurs_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_inscrits_views.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_mouvements_views.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/liste_des_paiments_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_paiments_views.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/liste_des_produits_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_produits_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_projets_views.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/liste_des_reinscriptions_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mes_historiques_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/mes_historiques_views.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tableau_de_bord_views.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/tableau_de_bord_views.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +91,7 @@
       <workItem from="1585817551857" duration="1435000" />
       <workItem from="1585848774978" duration="35702000" />
       <workItem from="1585937369079" duration="10220000" />
-      <workItem from="1586015888363" duration="7781000" />
+      <workItem from="1586015888363" duration="24338000" />
     </task>
     <servers />
   </component>
@@ -133,15 +118,16 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="580" y="190" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1585782453911" />
-    <state x="622" y="269" key="NewPhpClassDialog" timestamp="1585862367995">
+    <state x="622" y="269" key="NewPhpClassDialog" timestamp="1586090059868">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="622" y="269" key="NewPhpClassDialog/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585862367995" />
-    <state x="635" y="366" key="NewPhpFileDialog" timestamp="1585916641256">
+    <state x="622" y="269" key="NewPhpClassDialog/0.0.1600.870@0.0.1600.870" timestamp="1586090059868" />
+    <state x="635" y="366" key="NewPhpFileDialog" timestamp="1586090029004">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="635" y="366" key="NewPhpFileDialog/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585858820160" />
-    <state x="635" y="366" key="NewPhpFileDialog/0.0.1600.870@0.0.1600.870" timestamp="1585916641256" />
+    <state x="635" y="366" key="NewPhpFileDialog/0.0.1600.870@0.0.1600.870" timestamp="1586090029004" />
     <state x="301" y="77" key="SettingsEditor" timestamp="1585782400691">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -150,10 +136,11 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="495" y="259" key="com.intellij.ide.util.TipDialog/0.0.1600.870@0.0.1600.870" timestamp="1585781743619" />
-    <state x="456" y="198" key="run.anything.popup" timestamp="1585864293922">
+    <state x="456" y="198" key="run.anything.popup" timestamp="1586086639873">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="456" y="198" key="run.anything.popup/0.0.1600.870/1600.0.1024.738@0.0.1600.870" timestamp="1585864293922" />
+    <state x="456" y="198" key="run.anything.popup/0.0.1600.870@0.0.1600.870" timestamp="1586086639873" />
     <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1585919745318">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

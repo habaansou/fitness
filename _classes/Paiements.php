@@ -38,7 +38,6 @@ class Paiements
         global $db;
         $req=$db->prepare("DELETE FROM paiements WHERE idPaiements = ?");
         $req->execute([strscr($id)]);
-        return $req->closeCursor();
+        $req->closeCursor();
     }
-
 }

@@ -27,10 +27,15 @@ $(document).ready(function(){
             }
         })
     });
-    var modal = $("#modale");
-    $(modal).on('click',function(e){
+
+    /*$("#modale").on('click',function(e){
         e.preventDefault();
-        var lien = $(modal).attr('data-href');
-        $('.sup').attr('href', lien);
-    })
-})
+            var lien = $(this).attr('data-href');
+            $('.sup').attr('href', lien);
+            console.log(lien);
+    });*/
+    $("a[data-href]").click(function(){
+        var lien = $(this).attr("data-href");
+        $(".sup").attr("href", lien);
+    });
+});

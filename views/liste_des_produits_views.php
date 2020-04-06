@@ -106,7 +106,7 @@
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->nomProduits?></font></font></td>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->nameCategories?></font></font></td>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->etatProduits?></font></font></td>
-                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=$get->prixProduits?></font></font></td>
+                                            <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=number_format($get->prixProduits,'2','.',',').' GNF'?></font></font></td>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?=date_format(date_create($get->dateProduit),'d/m/Y à h:m:s')?></font></font></td>
                                             <?php if(isset($_SESSION['fitness']['roleUsers']) AND !empty($_SESSION['fitness']['roleUsers']) AND $_SESSION['fitness']['roleUsers']=="Administrateur"):?>
                                             <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">

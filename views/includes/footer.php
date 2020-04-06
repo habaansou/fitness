@@ -14,7 +14,7 @@
                 <p>Voulez vous vraiment supprimer ?</p>
             </div>
             <div class="modal-footer">
-                <a class="sup" href="index.php" ><button class="btn ripple btn-danger" type="button">Oui</button></a>
+                <a class="sup" href="<?=DIR.'tableau_de_bord'?>"><button class="btn ripple btn-danger" type="button">Oui</button></a>
                 <button class="btn ripple btn-secondary" data-dismiss="modal" type="button">Non</button>
             </div>
         </div>
